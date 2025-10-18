@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<OutputType>WinExe</OutputType>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<RootNamespace>Пробую_прогу_с_интерфейсом</RootNamespace>
+	<Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<AssemblyVersion>3.0.0.0</AssemblyVersion>
+	<FileVersion>3.0.0.0</FileVersion>
+	 <Version>3.0.0</Version>
+	<Copyright>Copyright © TUZMAN TEAM 2025</Copyright>
+	<Company>Tuzman Team</Company>
+	<Product>KalTuz 3.0</Product>
+	<Description>KalTuz 3.0 by TUZMAN TEAM</Description>
+	<ApplicationIcon>favicon (4).ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Content Include="favicon (4).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Compile Update="Properties\Resources.Designer.cs">
+	  <DesignTime>True</DesignTime>
+	  <AutoGen>True</AutoGen>
+	  <DependentUpon>Resources.resx</DependentUpon>
+	</Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+	<EmbeddedResource Update="Properties\Resources.resx">
+	  <Generator>ResXFileCodeGenerator</Generator>
+	  <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	</EmbeddedResource>
+  </ItemGroup>
+
+</Project>
