@@ -5,9 +5,8 @@ namespace Kaltuz
 {
     public partial class KalTuz : Form
     {
-        public double i;
+        public double number;
         public string operation;
-        public double f;
 
         public KalTuz()
         {
@@ -67,35 +66,35 @@ namespace Kaltuz
 
         private void button11_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
+            number = Convert.ToDouble(textBox1.Text);
             operation = button11.Text;
             textBox1.Clear();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
+            number = Convert.ToDouble(textBox1.Text);
             operation = button12.Text;
             textBox1.Clear();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
+            number = Convert.ToDouble(textBox1.Text);
             operation = button13.Text;
             textBox1.Clear();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
+            number = Convert.ToDouble(textBox1.Text);
             operation = button14.Text;
             textBox1.Clear();
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
+            number = Convert.ToDouble(textBox1.Text);
             operation = button16.Text;
             textBox1.Clear();
         }
@@ -112,14 +111,14 @@ namespace Kaltuz
 
         private void button19_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = Convert.ToString(i * i);
+            number = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = Convert.ToString(number * number);
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            i = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = Convert.ToString(i * i * i);
+            number = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = Convert.ToString(number * number * number);
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -127,28 +126,28 @@ namespace Kaltuz
             double equals = Convert.ToDouble(textBox1.Text);
             if (operation == button11.Text)
             {
-                textBox1.Text = Convert.ToString(i + equals);
-                i = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = Convert.ToString(number + equals);
+                number = Convert.ToDouble(textBox1.Text);
             }
             else if (operation == button12.Text)
             {
-                textBox1.Text = Convert.ToString(i - equals);
-                i = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = Convert.ToString(number - equals);
+                number = Convert.ToDouble(textBox1.Text);
             }
             else if (operation == button13.Text)
             {
-                textBox1.Text = Convert.ToString(i * equals);
-                i = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = Convert.ToString(number * equals);
+                number = Convert.ToDouble(textBox1.Text);
             }
             else if (operation == button14.Text)
             {
-                textBox1.Text = Convert.ToString(i / equals);
-                i = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = Convert.ToString(number / equals);
+                number = Convert.ToDouble(textBox1.Text);
             }
             else if (operation == button16.Text)
             {
-                textBox1.Text = Convert.ToString(i / 100 * equals);
-                i = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = Convert.ToString(number / 100 * equals);
+                number = Convert.ToDouble(textBox1.Text);
             }
         }
 
