@@ -1,7 +1,7 @@
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing.Imaging;
 
-namespace Пробую_прогу_с_интерфейсом
+namespace Kaltuz
 {
     public partial class KalTuz : Form
     {

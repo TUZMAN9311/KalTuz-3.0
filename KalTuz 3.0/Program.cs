@@ -1,4 +1,4 @@
-﻿namespace Пробую_прогу_с_интерфейсом
+﻿namespace Kaltuz
 {
     internal static class Program
     {
