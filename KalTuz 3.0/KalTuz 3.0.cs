@@ -141,8 +141,15 @@ namespace Kaltuz
             }
             else if (operation == button14.Text)
             {
-                textBox1.Text = Convert.ToString(number / equals);
-                number = Convert.ToDouble(textBox1.Text);
+                if(equals == 0)
+                {
+                    textBox1.Text = "Делить на ноль нельзя!";
+                }
+                else
+                {
+                    textBox1.Text = Convert.ToString(number / equals);
+                    number = Convert.ToDouble(textBox1.Text);
+                }
             }
             else if (operation == button16.Text)
             {
